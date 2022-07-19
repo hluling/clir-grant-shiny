@@ -12,4 +12,4 @@ https://clir.shinyapps.io/clir-grant-shiny/
 * Jennifer Ross
 
 **License:**<br>
-GNG General Public License v2.0 +
+GNU General Public License v2.0 +
