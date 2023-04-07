@@ -3,3 +3,4 @@
 .RData
 .Ruserdata
 .secrets
+service_account.json

@@ -5,7 +5,9 @@ account: clir
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 6405606
-bundleId: 5964862
+bundleId: 7060319
 url: https://clir.shinyapps.io/clir-grant-shiny/
-when: 1654022596.84577
-lastSyncTime: 1654022596.84577
+when: 1680840796.16877
+lastSyncTime: 1680840796.16877
+asMultiple: FALSE
+asStatic: FALSE

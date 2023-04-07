@@ -1,12 +1,20 @@
+# Updates:
+#2023/04/07
+# Now use the Google service account method to authenticate into Google Sheet
+# See https://github.com/tidyverse/googlesheets4/issues/184
+
+
+#2022/05/31
+# Trying to set up automatic auth for google sheet
+
+
 #2022/04/08
 # Created a list that maps color to grant categories
 # This list is used in the reactive map so that the color-category relationship stays constant regardless of user selection
 
 # 2022/3/25
 # based on app_20220324.R
-# Updates:
-#2022/05/31
-# Trying to set up automatic auth for google sheet
+
 
 library(googledrive)
 library(googlesheets4)
@@ -24,8 +32,16 @@ library(stringr)
 # list.files(".secrets/")
 
 # Step 2: Keep this in script
-gs4_auth(cache = ".secrets", email = TRUE, use_oob = TRUE)
+#gs4_auth(cache = ".secrets")
+#gs4_deauth()
+#options(gargle_oauth_cache = ".secrets")
+#gs4_auth(cache = ".secrets", email = TRUE, use_oob = TRUE)
+# 
+# drive_deauth()
+# drive_auth(cache = ".secrets", email = TRUE)
 
+# 04/07/2023: Now doing this only
+gs4_auth(path = "service_account.json")
 
 # prepare data ----------------------------------------------------------------------
 
